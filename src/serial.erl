@@ -35,7 +35,7 @@
 priv_dir() ->
     case code:priv_dir(serial) of
 	{error, bad_name} ->
-	    "./priv";
+	    "./deps/serial/priv";
 	D ->
 	    D
     end.
